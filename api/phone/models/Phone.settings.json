@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "phones",
+  "info": {
+    "name": "phone",
+    "description": "a phone in the game"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "x-pos": {
+      "type": "integer"
+    },
+    "y-pos": {
+      "type": "integer"
+    },
+    "z-pos": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}
