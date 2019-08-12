@@ -5,11 +5,11 @@
       "connector": "strapi-hook-bookshelf",
       "settings": {
         "client": "postgres",
-        "database": "test",
-        "host": "127.0.0.1",
+        "database": "postgres",
+        "host": "localhost",
         "port": 5432,
         "username": "postgres",
-        "password": "postgres"
+        "password": "pg"
       },
       "options": {}
     }

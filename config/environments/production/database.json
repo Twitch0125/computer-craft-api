@@ -1,5 +1,5 @@
 {
-  "defaultConnection": "default",
+  "defaultConnection": "heroku",
   "connections": {
     "default": {
       "connector": "strapi-hook-bookshelf",
@@ -16,6 +16,20 @@
       "options": {
         "ssl": "${process.env.DATABASE_SSL || false}",
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
+      }
+    },
+    "heroku": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "ec2-54-235-96-48.compute-1.amazonaws.com",
+        "port": 5432,
+        "database": "dc6olh0msimekf",
+        "username": "pzfmhxrltfwwqm",
+        "password": "9a191a2be4f7f9af5177cdeb059dd69270fbed63502bc661f6f71537c4641df8"
+      },
+      "options": {
+        "ssl": true
       }
     }
   }
